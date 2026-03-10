@@ -1,16 +1,63 @@
-# React + Vite
+# FlowCRM
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FlowCRM is a modern **Customer Relationship Management (CRM)** web application built with **React and Vite**.  
+The goal of this project is to provide a simple interface to manage customers, track interactions, and organize sales workflows.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Vite
+- JavaScript
+- CSS / Tailwind CSS (if used)
+- ESLint
 
-## React Compiler
+## 📦 Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Clone the repository:
 
-## Expanding the ESLint configuration
+```bash
+git clone https://github.com/LyesMedjahed/FlowCRM.git
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Navigate to the project folder:
+
+```bash
+cd FlowCRM
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will run at:
+
+```
+http://localhost:5173
+```
+
+## 📂 Project Structure
+
+```
+src/
+ ├── components
+ ├── pages
+ ├── services
+ ├── App.jsx
+ └── main.jsx
+```
+
+## 🎯 Project Purpose
+
+This project is part of my **developer portfolio** and demonstrates my ability to build modern web applications using **React and modern frontend tooling**.
+
+## 📄 License
+
+This project is open source and available under the MIT License.

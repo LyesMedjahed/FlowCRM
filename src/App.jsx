@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import Sidebar from './components/SideBar/Sidebar';
@@ -43,13 +43,14 @@ function App() {
         
       <Sidebar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Clients" element={<Clients />} />
-        <Route path="/Leads" element={<Leads />} />
-        <Route path="/Analytics" element={<Analytics />} />
-        <Route path="/Settings" element={<Settings />} />
-      </Routes>
+     <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/clients" element={<Clients />} />
+        <Route path="/leads" element={<Leads />} />
+        <Route path="/analytics" element={<Analytics />} />
+        <Route path="/settings" element={<Settings />} />
+    </Routes>
 
        </div>
       <Footer />

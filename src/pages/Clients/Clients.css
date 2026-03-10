@@ -1,0 +1,88 @@
+
+.client-container{
+   min-height: 80vh;
+   width: 100%;
+   flex: 1;
+   margin-left: 30px;
+}
+
+.client-title{
+    width: 90%;
+    position: relative;
+    margin: 30px 0;
+}
+
+input,
+select{
+    border-radius: 5px;
+    padding: 7px 25px;
+    margin: 5px 2px;
+    border: 1px solid white;
+    outline: none;
+}
+input:focus,
+select:focus{
+    border: 2px solid #2152ff;
+}
+
+hr{
+    width: 80%;
+    border: none;
+    height: 2px;
+    background: #f9f9f9;
+}
+
+.add-client{
+    padding-top: 30px;
+}
+
+.btn-add{
+    padding: 7px 25px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: #2152ff;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.btn-add:hover{
+    background-color: #1a44d6;
+}
+.btn-add:hover,
+.btn-delete:hover{
+    transform: translateY(-5%);
+}
+
+.btn-delete{
+    padding: 7px 25px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: #f44336;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.btn-delete:hover{
+    background-color: #b02a37;
+}
+
+.table{
+    width: 80%;
+    padding-top: 20px;
+}
+.thead{
+    background-color: #f0f0f0;
+}
+td{
+    border-bottom: 3px solid #f9f9f9;
+}
+
+/*dark mode*/
+.dark .thead,
+.dark hr,
+.dark td{
+    background-color: #1f2937;
+}
+.dark td{
+    border-bottom: none;
+}

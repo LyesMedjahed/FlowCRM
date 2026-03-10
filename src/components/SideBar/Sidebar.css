@@ -1,0 +1,78 @@
+/*=============================
+--SIDEBAR--
+=============================*/
+.sidebar{
+  position: sticky;
+   background-color: #ffffff;
+   padding: 20px 60px 20px 30px;
+   margin: 0px 25px;
+   border-radius: 20px;
+   height: 95vh;
+   width: 200px;
+   transition: width 0.3s ease;
+   overflow: hidden;
+}
+.sidebar.collapsed{
+  width: 80px;
+}
+.sidebar.collapsed .link{
+  display: none;
+}
+
+/*rotate icon*/
+.toggle-icon{
+  transition: transform 0.3s ease;
+}
+
+.toggle-icon.rotated{
+  transform: rotate(180deg);
+}
+.toggle-icon{
+  transition: transform 0.35s cubic-bezier(.4,0,.2,1);
+}
+/*rotate icon*/
+  .sidebar-element{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding: 10px 15px;
+  text-decoration:none;
+  color:black;
+  margin: 10px 0;
+  width: 150px;
+}
+
+   /* hover */
+  .sidebar-element:hover{
+   width: 150px;
+  background:#f4f6f9;
+  border-radius:5px;
+   }
+   /*Active*/
+   .sidebar-element.active {
+   width: 150px;
+   background-color: #f4f6f9;
+   border-radius: 5px;
+   }
+   .sidebar-container{
+     display: flex;
+     flex-direction: column; 
+     justify-content: space-between;
+     gap: 50px;
+  }
+  .link{
+    padding-left: 15px;
+    text-decoration: none;
+  }
+
+/*dark mode*/
+.dark .sidebar{  
+    background-color: #1f2937;
+}
+.dark .sidebar-element{
+  color: white;
+}
+.dark .sidebar-element.active,
+.dark .sidebar-element:hover{
+  color:  #1f2937;
+}

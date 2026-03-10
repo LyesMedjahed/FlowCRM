@@ -1,0 +1,26 @@
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: rgba(0,0,0,0.03);
+}
+
+.layout.dark .activity-table thead {
+  background-color: #1f2937;
+}
+
+.layout.dark .activity-table td {
+  border-top: 1px solid #374151;
+}
+
+.layout.dark .activity-table tbody tr:hover {
+  background-color: #374151;
+}
+

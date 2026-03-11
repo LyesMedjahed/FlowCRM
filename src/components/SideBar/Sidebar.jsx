@@ -27,10 +27,11 @@ function Sidebar() {
         />
 
   <nav>
-  <NavLink to="/" className="sidebar-element">
-    <HiHome size={20} />
-    <span className="link">Dashboard</span>
-  </NavLink>
+
+    <NavLink to="/home" className={({ isActive }) => `sidebar-element ${isActive ? "active" : ""}`}>
+      <HiHome size={20} />
+      <span className="link">Dashboard</span>
+    </NavLink>
 
   <NavLink to="/clients" className="sidebar-element">
     <HiUsers size={20} />

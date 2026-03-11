@@ -11,10 +11,10 @@ export default function Footer() {
               <li><a href="#">Terms</a></li>
             </ul>
            
-            <div class="allrightsContainer">
-      <p class="allRights">©<span id="year"></span>FlowCRM.  All rights reserved.</p>
+            <div className="allrightsContainer">
+      <p className="allRights">©<span id="year"></span>FlowCRM.  All rights reserved.</p>
       <span>|</span>
-      <p class="signature">Created with ❤️ by <a href="https://www.linkedin.com/in/lyes-medjahed" target="_blank" rel="noopener noreferrer" class="author"> Lyes Medjahed</a></p>
+      <p className="signature">Created with ❤️ by <a href="https://www.linkedin.com/in/lyes-medjahed" target="_blank" rel="noopener noreferrer" className="author"> Lyes Medjahed</a></p>
     </div>
         </div>
     );

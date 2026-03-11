@@ -30,7 +30,7 @@
 .toggle-icon{
   transition: transform 0.35s cubic-bezier(.4,0,.2,1);
 }
-/*rotate icon*/
+
   .sidebar-element{
   display:flex;
   align-items:center;
@@ -49,7 +49,7 @@
   border-radius:5px;
    }
    /*Active*/
-   .sidebar-element.active {
+    .sidebar-element.active {
    width: 150px;
    background-color: #f4f6f9;
    border-radius: 5px;

@@ -3,14 +3,14 @@ import { clients } from "../../data/mockData";
 
 function ActivityTable(){
     return (
-        <div>
+        <div className="Table">
  <table className="activity-table">
   <thead>
     <tr>
       <th>Name</th>
       <th>Status</th>
       <th>Revenue</th>
-      <th>Month</th>
+     {/* <th>Month</th>*/}
     </tr>
   </thead>
 
@@ -22,7 +22,7 @@ function ActivityTable(){
             <span className={`status ${client.status}`}> {client.status} </span>
          </td>
          <td>{client.revenue}</td>
-         <td>{client.month}</td>
+        {/* <td>{client.month}</td>*/}
       </tr>
     ))}
   </tbody>

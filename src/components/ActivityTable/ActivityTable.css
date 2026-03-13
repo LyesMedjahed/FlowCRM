@@ -24,3 +24,19 @@ tr:hover {
   background-color: #374151;
 }
 
+/*======================
+---RESPONSIVE---
+=======================*/
+/*Tablette*/
+@media (max-width: 1023px) {
+  
+}
+
+/*Mobile*/
+@media (max-width: 767px) {
+  th, td{
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+    width: 50%;
+    height: auto;
+  }
+}

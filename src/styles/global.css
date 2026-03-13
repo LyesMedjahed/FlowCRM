@@ -31,9 +31,35 @@ body{
 #layout{
   display: flex;
   align-items: flex-start;
-  justify-content: start;
-  flex-wrap: wrap;
-  margin-right: 50px;
+  justify-content: flex-start;
+  margin-right: 3.13rem;
   min-height: 80vh;
-  border-radius: 20px;
+  border-radius: 1.25rem;
+}
+
+
+/*======================
+---RESPONSIVE---
+=======================*/
+/*Tablette*/
+@media (max-width: 1023px) {
+  
+}
+
+/*Mobile*/
+@media (max-width: 767px) {
+#layout{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+
+}
+@media (max-width: 766px) {
+  #layout{ 
+    margin: 1rem;
+  }
+}
 }

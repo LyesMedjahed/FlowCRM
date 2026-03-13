@@ -68,7 +68,7 @@ return (
             </div><hr />
 
             <div className="analytics-charts">
-              <Bar style={{height: "auto", Width: "60%"}} data={data} />
+              <Bar style={{height: "auto", width: "100%"}} data={data} />
               <p className='totalRevenue'>Total Revenue: {totalRevenue.toLocaleString()} €</p>
               <hr />
               <div className="pie-container">

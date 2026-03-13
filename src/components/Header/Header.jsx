@@ -1,11 +1,18 @@
 
 import { HiMoon, HiSun, HiBell } from "react-icons/hi";
 import './Header.css';
+import { HiBars3BottomLeft } from "react-icons/hi2";
 
-function Header({ darkMode, toggleDarkMode, search, setSearch }) {
+function Header({ darkMode, toggleDarkMode, search, setSearch, toggleSidebar }) {
+
     return (
 
         <div className="header">
+
+         {<HiBars3BottomLeft className="burgermenu"  size={25} 
+                             onClick={toggleSidebar}
+                             style={{cursor:"pointer"}}
+          />}
 
           <h2 className="logo">FlowCRM</h2>
 

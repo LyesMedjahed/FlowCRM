@@ -11,12 +11,13 @@ import { NavLink } from 'react-router-dom';
 import { useState } from "react";
 
 
-function Sidebar() {
-
+function Sidebar({ sidebarOpen}) {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <div className={`sidebar ${collapsed ? "collapsed" : ""}`}>
+    <div className={`sidebar ${collapsed && !sidebarOpen ? "collapsed" : ""} 
+                             ${sidebarOpen ? "open" : ""}`}>
+
       <div className="sidebar-container" style={{ marginTop: "40px"}}>
 
         <HiOutlineLogin  
@@ -25,7 +26,7 @@ function Sidebar() {
           style={{cursor: "pointer"}} 
           onClick={()=> setCollapsed(!collapsed)}
         />
-
+  
   <nav>
 
     <NavLink to="/home" className={({ isActive }) => `sidebar-element ${isActive ? "active" : ""}`}>
@@ -39,17 +40,17 @@ function Sidebar() {
   </NavLink>
 
   <NavLink to="/leads" className="sidebar-element">
-    <HiCollection size={20} />
+    <HiCollection size={20}  />
     <span className="link">Leads</span>
   </NavLink>
 
   <NavLink to="/analytics" className="sidebar-element">
-    <HiChartBar size={20} />
+    <HiChartBar size={20}  />
     <span className="link">Analytics</span>
   </NavLink>
 
   <NavLink to="/settings" className="sidebar-element">
-    <HiCog size={20} />
+    <HiCog size={20}  />
     <span className="link">Settings</span>
   </NavLink>
 </nav>

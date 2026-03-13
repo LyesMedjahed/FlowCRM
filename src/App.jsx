@@ -36,12 +36,16 @@ function App() {
     }
   }, [darkMode]);
 
+   const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <div className={darkMode ? "app dark" : "app"} >
-      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}
+              toggleSidebar={() => setSidebarOpen(!sidebarOpen)}
+      />
        <div id='layout'>
         
-      <Sidebar />
+      <Sidebar sidebarOpen={sidebarOpen} />
 
      <Routes>
         <Route path="/" element={<Navigate to="/home" />} />

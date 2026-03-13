@@ -94,17 +94,14 @@ function Leads() {
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
-
       <button className="btn-add" onClick={addLead}>Add Lead</button>
 
       <hr />
 
       {/* TABLE */}
-
       <table className="table">
-
         <thead className="thead">
-          <tr>
+          <tr className="tr">
             <th>Company</th>
             <th>Contact</th>
             <th>Status</th>
@@ -112,32 +109,22 @@ function Leads() {
             <th>Action</th>
           </tr>
         </thead>
-
-        <tbody>
-
+        <tbody className="tbody">
           {filteredLeads.map(lead => (
-
             <tr key={lead.id}>
-
               <td>{lead.name}</td>
               <td>{lead.contact}</td>
               <td>{lead.status}</td>
               <td>{lead.value}€</td>
-
               <td>
                 <button className="btn-delete" onClick={() => deleteLead(lead.id)}>
                   Delete
                 </button>
               </td>
-
             </tr>
-
           ))}
-
         </tbody>
-
       </table>
-
     </div>
   );
 }

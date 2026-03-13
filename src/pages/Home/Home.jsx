@@ -29,15 +29,13 @@ export default function Home() {
     client.name.toLowerCase().includes(search.toLowerCase())
   );
 
-
     return (
      <div>
 
       <clients clients={filteredClients} />
 
-      <h1 className='home-title'>Dashboard</h1>
-      
       <div className="dashboard-container"> 
+         <h1 className='home-title'>Dashboard</h1>
         <section className="stats-section">
         <StatCard 
           style={{width: '50px'}}

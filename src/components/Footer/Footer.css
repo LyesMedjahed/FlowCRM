@@ -59,3 +59,22 @@ li a:hover{
     /*background-color: #c0c1c4;*/
    
 }
+
+/*======================
+---RESPONSIVE---
+=======================*/
+/*Tablette*/
+@media (max-width: 1023px) {
+  
+}
+
+/*Mobile*/
+@media (max-width: 767px) {
+    .footer{
+        justify-content: center;
+        margin: 1rem
+    }
+  .allrightsContainer{
+    flex-direction: column;
+  }
+}

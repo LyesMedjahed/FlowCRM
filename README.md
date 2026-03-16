@@ -8,8 +8,8 @@ The goal of this project is to provide a simple interface to manage customers, t
 - React
 - Vite
 - JavaScript
-- CSS / Tailwind CSS (if used)
-- ESLint
+- JSX
+- CSS
 
 ## 📦 Installation
 
